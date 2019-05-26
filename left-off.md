@@ -1,0 +1,2 @@
+- implement preliminary ui/basic styling
+- incorporate modals
