@@ -1,0 +1,39 @@
+.month-container{
+    border-radius:6px;
+    border-color: #858a91;
+    padding-top:1%;
+    margin:2%;
+    color:rgb(65, 60, 73);
+    box-shadow: 2px 2px 2px 1px rgba(111, 57, 134, 0.466);
+}
+
+.month-title{
+    color:#858a91;
+    text-align: center;
+    margin-bottom:1%;
+    font-size:1.5em;
+}
+
+.days-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.day-name{
+    text-align: center;
+    font-size:0.8em;
+    margin:1%;
+}
+
+.day-container{
+    background-color: #edeff2;
+    min-height:5em;
+    margin:1%;
+    border-radius:2px;
+    box-shadow:0.3px 0.3px rgba(161, 161, 161, 0.562);
+}
+
+.day-number{
+    font-size:0.6em;
+    margin:0.3em;
+}

@@ -1,2 +1,3 @@
+- using vanilla css, but incorporating material design principles
 - implement preliminary ui/basic styling
 - incorporate modals

@@ -1,0 +1,45 @@
+
+#header-container{
+    background-color:#804cbf;
+    color:#eeefda;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+  
+}
+
+#header-text-container{
+    
+}
+
+#header-title{
+    margin-top:2%;
+    margin-left:2%;
+    font-size:3.6em;
+    font-family: 'Nanum Pen Script', cursive;
+}
+#header-subtext{
+    margin-left:2%;
+    margin-bottom:2%;
+    font-size:0.8em; 
+}
+
+.header-button-container{
+    display: flex;
+    justify-content: center; 
+}
+
+.header-button{
+    margin:4%;
+    border-radius: 5px;
+    font-size:1em;
+    padding:2%;
+    margin-top:11%;
+    min-width:5em;
+}
+
+#login-button{
+    
+}
+#register-button{
+    
+}
