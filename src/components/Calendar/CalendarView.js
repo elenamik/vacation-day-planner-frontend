@@ -2,6 +2,8 @@ import React from 'react';
 import MonthContainer from './MonthContainer';
 import "./calendar.css";
 import moment from 'moment';
+import Modal from "../Modal/Modal"
+import ModalGeneric from "../Modal/ModalGeneric"
 
 
 class CalendarView extends React.Component {
@@ -20,5 +22,9 @@ class CalendarView extends React.Component {
     );
   }
 }
+
+/* <Modal>
+   <ModalGeneric/>
+  </Modal> */
 
 export default CalendarView;
