@@ -6,7 +6,12 @@ function ModalGeneric() {
     <div className="surface">
       <div className="box-for-options">
       this is where you will be able to change things
+
+      <div className='exit-button'>
+      x
       </div>
+      </div>
+     
     </div>
   );
 }

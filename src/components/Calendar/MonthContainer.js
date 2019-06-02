@@ -29,7 +29,7 @@ class MonthContainer extends React.Component {
         const day_numbers=generateDayNumbers(this.props.month_number,this.props.year);
         const month_number=this.props.month_number;
         const day_array=day_numbers.map((day_number,index)=>
-            <DayContainer day_number={day_number} index={index} key={index} month_number={month_number} />
+            <DayContainer day_number={day_number} index={index} key={index} month_number={month_number} year={this.props.year} />
         );
         const day_names=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
         const day_names_array=day_names.map((day_name,index)=>
