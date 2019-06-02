@@ -5,7 +5,8 @@
 - adding ability to click on event with modal popping up:
     - design modal completely first!!
     - style modal - look at notes and plan fields
-    - button to close modal
+
+    -> button to close modal : left off: cant exit modal
     - have entered text stored in state and rendered
 
 - redux:
@@ -15,7 +16,6 @@
 - next to tackle:
     - responsiveness
     - adding couple of things to backend ( count in vacation days tag )
-    - design the way tags would work
     - connect backend with login
 
 

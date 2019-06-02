@@ -15,6 +15,7 @@ class EntryEditor extends React.Component {
       checked:true
     }
     this.toggleCheck=this.toggleCheck.bind(this);
+    this.handleExit=this.handleExit.bind(this);
   }
 
   toggleCheck(){
@@ -23,50 +24,60 @@ class EntryEditor extends React.Component {
     })
   };
 
+  handleExit(){
+    console.log("closing")
+    this.props.onCloseRequest()
+  }
+ 
   render(){
+   console.log(this.props)
   return (
     <div className="surface">
       <div className="box">
-      {this.props.title}
-
-      <Input
-      placeholder="entry title"
-      />
-      <TextField
-        className="start-date"
-        label="start date"
-        type="date"
-        defaultValue={this.props.date}
-        InputLabelProps={{
-          shrink: true,
-        }}
-      />
-        <TextField
-        className="end-date"
-        label="end date"
-        type="date"
-        defaultValue={this.props.date}
-        InputLabelProps={{
-          shrink: true,
-        }}
-      />
-      subtract from total vacation days:
-      <Checkbox
-      checked={this.state.checked}
-      onChange={this.toggleCheck}
-        />
-
-     
-   
-      <Fab disabled aria-label="Delete">
-        <DeleteIcon />
-      </Fab>
-      <Fab disabled aria-label="Add">
-        <AddIcon />
-      </Fab>
+        <div id="modal-title">
+          {this.props.title}
+        </div>
+          <div className="inputs">
+            <Input
+              placeholder="entry title"
+              className="entry-title"
+            />
+            <TextField
+              className="start-date"
+              label="start date"
+              type="date"
+              defaultValue={this.props.date}
+              InputLabelProps={{
+                shrink: true,
+            }}/>
+            <TextField
+              className="end-date"
+              label="end date"
+              type="date"
+              defaultValue={this.props.date}
+              InputLabelProps={{
+                shrink: true,
+            }}/>
+            <div className="check-box">
+              subtract from total vacation days:
+              <Checkbox
+                checked={this.state.checked}
+                onChange={this.toggleCheck}
+              />
+            </div>
+          </div>
+        
+          <div className='buttons'>
+            <Fab aria-label="Delete" onClick={()=>this.handleExit()}>
+                <DeleteIcon id="fab"/>
+            </Fab>
+            <Fab aria-label="Add" onClick={this.handleAdd}>
+              <AddIcon id="fab"/>
+            </Fab>
+          </div>
+          
+          </div>
       
-      </div>
-     
     </div>
   );
   }
