@@ -1,9 +1,11 @@
 
 #header-container{
-    background-color:#804cbf;
+    background-color:rgba(101, 42, 126, 0.788);
     color:#eeefda;
     display:grid;
     grid-template-columns: 2fr 1fr;
+    border-bottom:solid;
+    border-bottom-color:#858a91;
   
 }
 
@@ -14,13 +16,14 @@
 #header-title{
     margin-top:2%;
     margin-left:2%;
-    font-size:3.6em;
-    font-family: 'Nanum Pen Script', cursive;
+    font-size:3em;
+    font-family: 'Pacifico', cursive;
 }
 #header-subtext{
-    margin-left:2%;
+    margin-left:3%;
     margin-bottom:2%;
     font-size:0.8em; 
+    font-family: 'Roboto';
 }
 
 .header-button-container{
@@ -28,18 +31,13 @@
     justify-content: center; 
 }
 
-.header-button{
-    margin:4%;
-    border-radius: 5px;
-    font-size:1em;
-    padding:2%;
-    margin-top:11%;
-    min-width:5em;
-}
 
 #login-button{
-    
+    margin-top:18%;
+    margin-right:5%;
 }
 #register-button{
-    
+    margin-top:18%;
+    margin-left:5%;
 }
+
