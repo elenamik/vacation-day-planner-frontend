@@ -20,9 +20,8 @@
     border-radius: 5%;
     padding:6%;
     box-shadow: 2px 3px 3px 1px rgba(111, 57, 134, 0.466);
-
-
-  }
+    
+}
 
   .inputs{
       display:flex;

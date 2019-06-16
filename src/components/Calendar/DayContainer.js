@@ -2,6 +2,7 @@ import React from 'react';
 import Modal from '../Modal/Modal';
 import EntryEditor from '../Modal/EntryEditor';
 
+
 class DayContainer extends React.Component {
     constructor(props){
         super(props);
@@ -13,20 +14,22 @@ class DayContainer extends React.Component {
     }
 
     handleClick(){
-        this.setState({
-            showModal:true
-        });
+        if(this.props.day_number){
+            this.setState({
+                showModal:true,
+                render:this.props.day_number
+            });
+        }
         console.log(this.state);
     }
 
     async handleModalExit(){
-        await this.setState({
-            showModal:false
-        });
-        console.log("clicked exit: ",this.state)
-        await this.forceUpdate()
-        console.log("post update ",this.state)
 
+        const element =  document.querySelector('.surface')
+        element.classList.add('animated', 'bounceOutLeft')
+        await this.forceUpdate()
+         this.setState({
+             showModal:false})
     }
 
     render(){
@@ -39,16 +42,28 @@ class DayContainer extends React.Component {
             day="0"+day;
         }
         const date=this.props.year+"-"+month+"-"+day;
+
+        var active_cell="";
+        if (this.props.day_number){
+            active_cell="active"
+        }
+
         return (
-            <div className="day-container" onClick={this.handleClick}>
+            <div className={"day-container "+active_cell} onClick={this.handleClick}>
                 <div className="day-number">
                     {this.props.day_number}
+
+                    {this.props.entry && <div className="entry">
+                        {this.props.entry}
+                    </div>}
+                   
                     {this.state.showModal && <Modal>
                         <EntryEditor date={date} title="Add a New Entry" onCloseRequest={this.handleModalExit}/>
                     </Modal >}
                 </div>
             </div>
         );
+       
     } 
 }
 

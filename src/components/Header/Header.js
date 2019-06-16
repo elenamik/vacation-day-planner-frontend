@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './header.css';
+import Button from '@material-ui/core/Button';
 
 
 function Header(){
@@ -14,8 +15,8 @@ function Header(){
                 </div>
             </div>
             <div id="header-button-container">
-                <button id="login-button" className="header-button">Sign In</button>
-                <button id="register-button" className="header-button">Register</button>
+                <Button id="login-button"  variant="contained" >Sign In</Button>
+                <Button id="register-button"  variant="contained">Register</Button>
             </div>
         </div>
   )};
