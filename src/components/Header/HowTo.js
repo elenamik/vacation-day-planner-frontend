@@ -1,9 +1,10 @@
 import React from 'react';
+import './header.css';
 
-function HowTo() {
+function HowTo () {
   return (
-    <div className="how-to">
-    how to
+    <div className='how-to'>
+      <p>Please note, no data will persist after a page refresh.</p>
     </div>
   );
 }

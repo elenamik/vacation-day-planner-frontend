@@ -1,8 +1,8 @@
-import {TEST} from './actionConstants';
+import { TEST } from './actionConstants';
 
-export function test(modal_data){
-    return{
-        type:TEST,
-        modal_data
-    }
+export function test (modal_data) {
+  return {
+    type: TEST,
+    modal_data
+  };
 }

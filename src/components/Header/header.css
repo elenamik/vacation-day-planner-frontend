@@ -1,18 +1,12 @@
-
 #header-container{
     background-color:rgba(101, 42, 126, 0.788);
     color:#eeefda;
     display:grid;
-    grid-template-columns: 2fr 1fr;
     border-bottom:solid;
     border-bottom-color:#858a91;
-  
+    align-items: center;
+    text-align: center;
 }
-
-#header-text-container{
-    
-}
-
 #header-title{
     margin-top:2%;
     margin-left:2%;
@@ -30,8 +24,9 @@
     display: flex;
     justify-content: center; 
 }
-
-
+.how-to{
+    margin: 2%;
+}
 #login-button{
     margin-top:18%;
     margin-right:5%;

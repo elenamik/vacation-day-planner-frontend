@@ -1,8 +1,8 @@
 import React from 'react';
 
-function OptionsView() {
+function OptionsView () {
   return (
-    <div className="options-view">
+    <div className='options-view'>
     options
     </div>
   );
